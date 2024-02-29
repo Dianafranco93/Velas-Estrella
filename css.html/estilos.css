@@ -11,12 +11,29 @@ overflow-x:  hidden;
 
 header { 
  
- height: 550px;
- padding: 15px;
+ height: 200px;
+ padding: 10px;
  overflow: hidden;
- background-size: 100% 97%;
- background-image: url(../img.html/advent-estrella.jpeg);
+ text-align: center;
+ background-color:#bd9052;
 }
+
+header img{ 
+ 
+  height: 200px;
+ 
+}
+
+body{
+   
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:white;
+  width: 100%;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+}
+  
 
 
 h1{
@@ -47,69 +64,49 @@ color: #3b380f;
 padding: 15px;
 
 }  
-
-
  /*codigo articulo del inicio */ 
 
 
     /*codigo del subtitulo */  
     h2 {
-      padding: 20px;
+      padding: 30px;
       color:#3b380f;
       text-align: center;
     
     }
-
     .logo p{
-      padding: 20px;
+      padding: 30px;
       color:#3b380f;
       background-color: #d59f5c9c ;
       margin: 20px; 
       border-radius: 10px solid;
       border: #4C4920; 
     }
-
-    .destacados{
-     width: 100%;
-     height: auto;
-     background-color: #c89c7d;
-     display: grid;
-     grid-template-columns: repeat(4 1fr);
-     grid-template-rows: repeat(3 1fr) ;
-     grid-template-areas: 
-     "img1 img2 img3 img3"
-     "img1 img4 img5 img6"
-     "img4 img7 img6 img8";
-    }
-    .item{
-      border-radius: 6px solid #3b380f;
-    }
-    .item1{
-      grid-area: img1;
-    }
-    .item2{
-      grid-area: img2;
-    }
-    .item3{
-      grid-area: img3;
-    }
-    .item4{
-      grid-area: img4;
-    }
-    .item5{
-      grid-area: img5;
-    }
-    .item6{
-      grid-area: img6;
-    }
-    .item7{
-      grid-area: img7;
-    }
-    .item8{
-      grid-area: img8;
+ 
+    .contenedor-galeria {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 250px;
+      padding: 100px 0;
     }
 
-  /*codigo del subtitulo */  
+    .galeria  img{
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px solid #50583e;
+    }
+   
+    .galeria:nth-child(1){
+      grid-column-start: span 1;
+    }
+  
+    @media(min-width:480px){
+      
+
+    }
   .card{
     width: 280px; 
     border: 6px solid #bd9052 ; 
@@ -135,7 +132,7 @@ padding: 15px;
   height:180px;
   width: 100%;
   background-color:#bd9052  ;
-  background-image: url(../img.html/kit-velas.jpeg);
+  background-image: url(../img.html/molde-bb.jpeg);
 
 }
 .card__img2{
@@ -149,12 +146,13 @@ padding: 15px;
   height:180px;
   width: 100%;
   background-color:#bd9052  ;
-  background-image: url(../img.html/velas-recipiente-tres.jpeg);
+  background-image: url(../img.html/velasde-recipiente-uno.jpeg);
 
 }
 
 .card__content {
   padding: 15px; 
+
 }
 .card__titulo {
   margin-top: 0; 
@@ -184,27 +182,34 @@ padding: 15px;
   border-radius: 5px;
  
 }
-
-
-
-
-
-body{
+@media(min-width:370px){
+  .card__content{
+    width: 360px;
+    margin: auto;
    
-     font-family:Verdana, Geneva, Tahoma, sans-serif;
-     background-color:white;
-     width: 100%;
-     height: auto;
   }
+}
 
-    /*codigo del subtitulo */  
-  
+#carouselExample {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  height: 600px;
+}
+
+.carousel-item  {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+ 
+}
   
    /*codigo de iconos de redes sociales */  
 .redes{
-color: #4C4920;
+ color: #4C4920;
  font-size: 25px;
  padding: 3px;
+ text-decoration: none;
 }
 
 
@@ -235,7 +240,7 @@ footer{
  justify-content: center;
  text-align: center;
  font-size: 200%;
- background-color: #c89c7d;
+
 }
 
 /*codigo envios*/

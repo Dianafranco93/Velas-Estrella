@@ -1,6 +1,4 @@
-/*
-codigo de la barra de navegacion
-*/
+
 * {
 margin: 0; 
 padding: 0;
@@ -8,24 +6,20 @@ box-sizing: border-box;
 max-width: 100%;
 overflow-x:  hidden;
 }
-
+ /*header las pages*/
 header { 
- 
  height: 200px;
  padding: 10px;
  overflow: hidden;
  text-align: center;
  background-color:#bd9052;
 }
-
 header img{ 
- 
-  height: 200px;
- 
+ height: 200px;
 }
 
+ /* body de las pages*/
 body{
-   
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color:white;
   width: 100%;
@@ -33,9 +27,7 @@ body{
   margin: 0;
   padding: 0;
 }
-  
-
-
+ /*titulo principal*/
 h1{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -43,11 +35,7 @@ h1{
 } 
 
 
-a{
-  text-decoration: none;
-  color: #3b380f; 
-}  
- /*codigo del titulo principal */  
+ /*titulo envios */  
 span {
    
   color:#3b380f ;
@@ -56,17 +44,16 @@ span {
   background-size: cover;
   height: 100%;
 }
-
-
-.inicio{
-width: 30%;
-color: #3b380f;
-padding: 15px;
-
-}  
- /*codigo articulo del inicio */ 
-
-
+ 
+/*codigo del buscador */
+  
+.d-flex {
+  background-position-x: 90%;
+  border-radius:#3b380f;
+  background-color:hsl(35, 45%, 53%);
+  border-radius: 5px;
+ 
+}
     /*codigo del subtitulo */  
     h2 {
       padding: 30px;
@@ -74,6 +61,12 @@ padding: 15px;
       text-align: center;
     
     }
+    h3{
+      text-align: center;
+      color: #3b380f
+     }
+    
+    /* parrafo index*/
     .logo p{
       padding: 30px;
       color:#3b380f;
@@ -83,30 +76,8 @@ padding: 15px;
       border: #4C4920; 
     }
  
-    .contenedor-galeria {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 250px;
-      padding: 100px 0;
-    }
-
-    .galeria  img{
-      width: 200px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 5px solid #50583e;
-    }
-   
-    .galeria:nth-child(1){
-      grid-column-start: span 1;
-    }
+     /* aqui inicianlas cards*/
   
-    @media(min-width:480px){
-      
-
-    }
   .card{
     width: 280px; 
     border: 6px solid #bd9052 ; 
@@ -127,7 +98,6 @@ padding: 15px;
   overflow-x:  hidden;
 
 }
-
 .card__img1{
   height:180px;
   width: 100%;
@@ -149,7 +119,6 @@ padding: 15px;
   background-image: url(../img.html/velasde-recipiente-uno.jpeg);
 
 }
-
 .card__content {
   padding: 15px; 
 
@@ -173,15 +142,7 @@ padding: 15px;
 .card-inicio__btn:hover {
   background-color: #bd9052; 
 }
-/*codigo del buscador */
-  
-.d-flex {
-  background-position-x: 90%;
-  border-radius:#3b380f;
-  background-color:#bd9052;
-  border-radius: 5px;
- 
-}
+
 @media(min-width:370px){
   .card__content{
     width: 360px;
@@ -189,6 +150,7 @@ padding: 15px;
    
   }
 }
+ /* aqui terminan las cards*/
 
 #carouselExample {
   max-width: 600px;
@@ -203,24 +165,7 @@ padding: 15px;
   padding: 30px;
  
 }
-  
-   /*codigo de iconos de redes sociales */  
-.redes{
- color: #4C4920;
- font-size: 25px;
- padding: 3px;
- text-decoration: none;
-}
-
-
-   /*codigo subtitulos del inicio */ 
-h3{
-  text-align: center;
-  color: #3b380f
- }
-
-
-  /*codigo footer de la pagina */
+    /*codigo footer de las pages */
 footer{
   overflow: hidden;
   padding: 25px;
@@ -231,17 +176,17 @@ footer{
   color:#3b380f;
 
 }
-
-/*codigo nosotrso*/
-.nosotros{
-
- padding: 10px;
- display:flex ;
- justify-content: center;
- text-align: center;
- font-size: 200%;
-
+   /*codigo de iconos de redes sociales */  
+.redes{
+ color: #4C4920;
+ font-size: 25px;
+ padding: 3px;
+ text-decoration: none;
 }
+a{
+  text-decoration: none;
+  color: #3b380f; 
+}  
 
 /*codigo envios*/
 .contenedor-formulario {
@@ -285,18 +230,13 @@ footer{
    border:none;
    border-radius: 10px;
 }
-   /*codigo imagenes velas*/
-  .velas{
 
-    border-radius: solid 1px #3b380f;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    margin: 0px 30px 30px;
-    display: inline-block;
-    position:relative;
-    left: 10%;
+.sub-envios{ 
+
+  padding: 10px;
+  display:flex;
   }
+   /*aqui termina codigo  envios*/
     
  /*codigo nosotros */
  .nosotrosubivideo {
@@ -325,13 +265,30 @@ iframe {
   border: 2px solid  #c89c7d ; 
   border-radius: 8px;
 }
+.nosotros{
+
+  padding: 10px;
+  display:flex ;
+  justify-content: center;
+  text-align: center;
+  font-size: 200%;
+ 
+ }
+/* termina codigo nosotrso*/
 
 
-   .sub-envios{ 
+ /*codigo imagenes velas*/
+ .velas{
 
-   padding: 10px;
-   display:flex;
-   }
+  border-radius: solid 1px #3b380f;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 0px 30px 30px;
+  display: inline-block;
+  position:relative;
+  left: 10%;
+}
 
    .sub-moldes{ 
     background-color: #c89c7d ;
@@ -356,7 +313,6 @@ iframe {
     margin:   35px;
   }
   .imagent :hover{ 
-
    transform: scale(1.2);
    border-radius: 3px;
   }
@@ -368,8 +324,6 @@ iframe {
   font-size: 15px;
   font-weight: bold;
   margin: 10px;
-
-
   }
 
   

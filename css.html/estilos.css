@@ -21,7 +21,7 @@ header img{
  /* body de las pages*/
 body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color:white;
+  background-color:rgba(236, 213, 173, 0.218);
   width: 100%;
   min-height: auto;
   margin: 0;
@@ -61,19 +61,23 @@ span {
       text-align: center;
     
     }
-    h3{
+    .destacados h3{
       text-align: center;
-      color: #3b380f
+      color: #3b380f;
+      padding: 40px;
+      margin: 0 auto;
      }
     
     /* parrafo index*/
     .logo p{
       padding: 30px;
       color:#3b380f;
-      background-color: #d59f5c9c ;
+      background-color: #d59f5c52;
       margin: 20px; 
-      border-radius: 10px solid;
-      border: #4C4920; 
+      border-radius: 10px solid #3b380f;
+      text-align: justify;
+      font-size: 20px;
+
     }
  
      /* aqui inicianlas cards*/
@@ -96,6 +100,7 @@ span {
   border-top-right-radius: 5px;
   max-width: 100%;
   overflow-x:  hidden;
+  margin: 0 auto;
 
 }
 .card__img1{
@@ -158,7 +163,6 @@ span {
   padding: 30px;
   height: 600px;
 }
-
 .carousel-item  {
   max-width: 600px;
   margin: 0 auto;
@@ -209,8 +213,6 @@ a{
   padding: 10px; 
   width:90vh;
 }
-
-
 .boton {
   background-color: #80a090; 
   color:#3b380f(245, 242, 242, 0.923); 
@@ -221,8 +223,6 @@ a{
   font-size: 16px;
   display: inline-block;
 }
-
-
 .boton:hover {
    background-color:#3b380f; 
    transform:scale(1.1);
@@ -230,7 +230,6 @@ a{
    border:none;
    border-radius: 10px;
 }
-
 .sub-envios{ 
 
   padding: 10px;
@@ -289,14 +288,6 @@ iframe {
   position:relative;
   left: 10%;
 }
-
-   .sub-moldes{ 
-    background-color: #c89c7d ;
-    width: 90%;
-    font-weight: bold;
-    text-align: center;
-    margin: 35px;
-  }
    .contenedor-img{ 
     width:100%;
     display: flex;
@@ -316,8 +307,6 @@ iframe {
    transform: scale(1.2);
    border-radius: 3px;
   }
-
-   
   .imagent p{ 
   text-align: center;
   padding: 5px;
@@ -325,5 +314,10 @@ iframe {
   font-weight: bold;
   margin: 10px;
   }
-
-  
+  .sub-moldes{ 
+    background-color: #c89c7d ;
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    margin: 35px;
+  }

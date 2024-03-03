@@ -2,24 +2,24 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css.html/estilos.css">
-  <title>Inicio</title>
- </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css.html/estilos.css">
+  <title>Envios</title>
+</head>
 
-  
     <body>
-
       <header>
-          <h1>Velas Estrella</h1>
+        <div>
+          <img src="../img.html/velas-logo.jpeg" alt="">
+        </div>
       </header>
       
-       <div class="Container-envios">
+       
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">Inicio</a>
@@ -41,56 +41,49 @@
                 <a class="nav-link" href="./envios.html">Envios</a>
               </li>
                </li>
-              
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="Buscar" placeholder="Buscar" >
+                <button class="btn btn-custom" type="submit">Buscar</button>
+              </form>
           </div>
         </div>
       </nav>
-    </div>
    
-        
-        <div class="contenedor-formulario">
-        <div class="formulario">
-          <h1><span class="sub-envios">Envios</span></h1>
-          <form action="">
-            <p>Nombres</p>
-            <input type="text" class="field">
-            <p>Apellidos</p>
-            <input type="text" class="field">
-            <p>Telefono</p>
-            <input type="text" class="field">
-            <p>Direccion</p>
-            <input type="text" class="field">
-            <p>Barrio</p>
-            <input type="text" class="field">
-            <p>Codigo Postal</p>
-            <input type="text" class="field">
-            <p>Descripción de la residencia (Opcional)</p>
-            <textarea class="field"></textarea>
-            <p><input type="submit" class="boton" value="Enviar Datos"></p>
-          </form>
-        </div>
+      <div class="titilo-envios">
+        <h1>Envios</h1>
       </div>
-   
-   <footer>
 
-       <p>Derechos reservados por copyright</p>
-         <p>Siguenos en nuestras redes</p>
-          <div class="redes">
-            <a href="">
-            <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="">
-           <i class="fa-brands fa-facebook"></i>
-          </a>
   
-   </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- </body>
+    <section class="contenedor-form" >
+      <div class="form-envios">
+        <h4>Registra tus datos</h4>
+        <input class="control" type="text" name="nombres" id="Nombres" placeholder="Ingrese su nombre">
+        <input class="control" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+        <input class="control" type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion">
+        <input class="control" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+        <input class="control" type="text" name="email" id="correo" placeholder="Ingrese su correo">
+        <input class="control"  type="text" name="correo" id="Nombres" placeholder="Descripcicon residencia">
+        <p  class="data" >Tratamiento de datos personales <a href="">Aceptar</a></p>
+        <input class="botton" type="submit" value="Enviar">
+      </div>
+    </section>
+    
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+      <p>Derechos reservados por copyright</p>
+       <p>Siguenos en nuestras redes</p>
+      <div class="redes">
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </footer>
 </html>
    
 

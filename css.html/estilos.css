@@ -19,7 +19,7 @@ header img{
 
  /* body de las pages*/
 body{
-  font-family:'Times New Roman', Times, serif;
+  font-family: cursive;;
   background-color:rgba(236, 213, 173, 0.218);
   width: 100%;
   min-height: auto;
@@ -29,9 +29,10 @@ body{
 }
  /*titulo principal*/
 h1{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   color:#3b380f;
+  font-size: 25px;
+  font-size: medium;
 }  
    /*codigo del buscador */
     .d-flex button {
@@ -188,7 +189,7 @@ h1{
   height:180px;
   width: 100%;
   background-color:#bd9052  ;
-  background-image: url(../img.html/velasde-recipiente-uno.jpeg);
+  background-image: url(../img.html/velas-recipiente-dos.jpeg);
 
 }
 .card__content {
@@ -258,7 +259,7 @@ h1{
 }
  /* fin modal*/
 
-  /* inicio rousel*/
+  /* inicio carousel*/
 .container-carousel {
  width: 100%;
  height: auto;
@@ -277,6 +278,17 @@ h1{
   padding: 30px;
   height: 600px;
 }
+.carousel-item  h6 {
+ color: #191809;
+ font-size: 25px;
+ font-family:cursive;
+}
+.carousel-item  p {
+  color: #191809;
+  font-size: 25px;
+  font-family:cursive;
+ }
+ 
 
 .carousel-control-prev-icon{
   background-color: #3b380fb4;
@@ -296,13 +308,14 @@ footer{
   background-color: #bd9052;
   text-align:center;
   color:#3b380f;
+  font-size: 17px;
 
 }
    /*estilo de iconos de redes sociales */  
 .redes{
  color: #3b380f;
  font-size: 25px;
- padding: 3px;
+ padding: 3px 0 6px 0;
  text-decoration: none;
 }
 .redes a:hover{
@@ -567,18 +580,5 @@ transform: scale(1.1);
   transform: scale(1.1);
   }
    
-  @media(min-width:320px){
-    .contenedor-catalogo{
-      width: 280px;
-      margin: auto;
-      grid-template-columns: repeat(1, 1fr);
-    }
-    }
-    @media(min-width:360px){
-      .contenedor-catalogo{
-        width: 400px;
-        margin: auto;
-        grid-template-columns: repeat(2, 1fr);
-      }
-  }
+
   /*fin estilos moldes*

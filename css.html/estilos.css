@@ -330,7 +330,8 @@ a{
 /*estilo envios*/
 .titilo-envios h1{ 
   padding: 50px 0 5px 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: cursive;
+  font-size: 50px;
 }
 .contenedor-form{ 
   max-height: auto;
@@ -346,23 +347,30 @@ a{
   width: 550px;
   height:700px ;
   background-color: #c89c7d70;
-  padding: 30px;
+  padding: 10px;
+  border: 10px;
   margin: 0  auto;
   margin-top: 100px;
-  border-radius: 4px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+  font-family:cursive;
   color:  #825d42;
  }
- .form-envios a{
+ .data {
+  margin: 10px 0 40px 0;
+}
+ .data a{
+  font-size: 20px;
   color: #9a7153;
   text-decoration: none;
  }
  .form-envios a:hover {
-  color: #c89c7dd9;
+  color: #3b380f;
   text-decoration: none;
   text-decoration: underline;
  }
- .data p{
+ .data span{
+  font-size: 20px;
+  margin: 20px 0 30px 0;
   color: #3b380f;
 }
 
@@ -370,13 +378,12 @@ a{
   display: block;
   color:#c89c7d;
   background-color:  #3b380f7a;
-  min-width: 80%;
+  min-width: 45%;
   border: none;
   padding: 10px;
-  margin: 25px;
-  margin-left: 55px;
+  margin: 10px o 10px 0;
+  margin-left: 28%;
   border-radius: 3px;
-  justify-content: space-evenly;
  
  }
 .form-envios .botton:hover{
@@ -395,24 +402,18 @@ a{
   border-radius: 5px;
   margin-bottom: 18px;
   border: 2px solid #c89c7d7a;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 20px;
+  font-family:cursive;
+  font-size: 22px;
   margin-left: 30px;
 }
 .form-envios p{
- height: 40px;
+ height: 50px;
  text-align: center;
- font-size: 18px;font-family: 'Courier New', Courier, monospace;
+ font-size: 12px;
+ font-family:cursive;
  }
 
- @media(min-width:320px){
-  .contenedor-form{
-    width: 480px;
-    margin: auto;
-    min-height: auto;
-    
-  }
-}
+
 
    /*fin estilos  envios*/
     
@@ -581,5 +582,4 @@ transform: scale(1.1);
   transform: scale(1.1);
   }
    
-
   /*fin estilos moldes*

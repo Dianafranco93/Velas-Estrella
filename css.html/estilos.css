@@ -189,7 +189,7 @@ h1{
   height:180px;
   width: 100%;
   background-color:#bd9052  ;
-  background-image: url(../img.html/velas-recipiente-dos.jpeg);
+  background-image: url(../img.html/vela-card.jpeg);
 
 }
 .card__content {
@@ -208,55 +208,56 @@ h1{
   padding: 15px;
   text-align: justify; 
 }
-.card-inicio__btn {
-  display: inline-block; 
-  background-color: #bd9052 ; 
-  color: #3b380f; 
-  padding: 10px 20px; 
-  text-decoration: none; 
-  border-radius: 5px; 
-}
-.card-inicio__btn {
-  background-color: #bd9052; 
-}
 
-.button:hover {
-  background-color:#3b380f; 
-  transform:scale(1.1);
-  background-color: #80a090;
-  border:none;
-  border-radius: 10px;
-  background: none;
-}
+
 
 @media(min-width:320px){
   .card__content{
-    width: 280pxx;
+    width: 280px;
     margin: auto;
-
   }
-}
+  }
+
  /* aqui terminan las cards*/
 
 
   /* estilos modal*/
-  .btn-secondary{
-    background-color:   #bd9052;
-    border:2px solid #4c492074 ;
+ 
+   .btn-primary {
+    padding:8px;
+    background: none;
+    border: 2px solid  #3b380fb4 ;
+    border-radius: 10px ;
+    color: #fff; 
+    background-color: #bd9052; 
+    border-color: #3b380fb4; 
   }
-.btn-secondary:hover{
-  background-color:   #354916a8;
-  border:2px solid #4c492074 ;
-}
+   .btn-primary:hover {
+    padding:8px;
+    border: 2px solid  #3b380fb4 ;
+    border-radius: 10px ;
+    color: #fff; 
+    background-color :#3b380fb4 ; 
+    border-color:  #bd9052; 
+  }
+   .btn-secondary {
+    padding:8px;
+    background: none;
+    border: 2px solid  #3b380fb4 ;
+    border-radius: 10px ;
+    color: #fff; 
+    background-color: #bd9052; 
+    border-color: #3b380fb4; 
+  }
+   .btn-secondary:hover {
+    padding:8px;
+    border: 2px solid  #3b380fb4 ;
+    border-radius: 10px ;
+    color: #fff; 
+    background-color:  #3b380fb4; 
+    border-color:#bd9052; 
+  } 
 
-.btn-primary{
-  background-color:   #bd9052;
-  border:2px solid #4c492074 ;
-}
-.btn-primary:hover{
-  background-color:   #354916a8;
-  border:2px solid #4c492074 ;
-}
  /* fin modal*/
 
   /* inicio carousel*/

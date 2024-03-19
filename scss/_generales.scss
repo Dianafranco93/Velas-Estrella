@@ -1,54 +1,72 @@
-   * {
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&display=swap');
+  * {
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
     overflow-x:  hidden;
+    height: auto;
+    font-family: "Courier Prime", monospace;
     }
+  
+
      /*header las pages*/
        header { 
         height: 200px;
         padding: 10px;
         overflow: hidden;
         text-align: center;
-        background-color:#bd9052;
+        background-color:$primario;
        
         header img{ 
           height: 200px;
          }
        }
        body{
-        font-family: cursive;;
+        font-family: "Courier Prime", monospace;
         background-color:rgba(236, 213, 173, 0.218);
         width: 100%;
-        min-height: auto;
+        max-height: auto;
         margin: 0;
-        padding: 0;
-        max-width: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-
-      footer{
-        overflow: hidden;
-        padding: 20px 0;
-        height: 140px; ;
-        width:100%;
-        background-color: #bd9052;
-        text-align:center;
-        color:#3b380f;
-        font-size: 17px;
-      
-        .redes{
-          color: #3b380f;
-          font-size: 25px;
-          padding: 3px 0 6px 0;
-          text-decoration: none;
-         }
-         .redes a:hover{
-           transform: scale(1.2); 
+     
+        footer {
+          display: flex;
+          justify-content: space-between; 
+          align-items: center; 
+          background-color:$primario;
+          padding: 20px;
+       
+        .logo-footer {
+          display: flex; 
+          align-items: center; 
+          img {
+            max-width: 100px;
+            margin-right: 10px; 
           }
-         a{
-           text-decoration: none;
-           color: #3b380f; 
-         } 
-
+        }
+        .container-redes {
+          display: flex; 
+          align-items: center; 
+          .icono-redes {
+             gap: 35px;
+             padding: 15px;
+             transition: transform 0.3s ease-in-out; 
+             i {
+              font-size: 60px;
+              &:hover{
+                transform: scale(1.2); 
+              } 
+              } 
+          }
+        
+          h4{
+          margin-top: 20px;
+          }
+        }
       }
+  
+      
